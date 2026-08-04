@@ -13,7 +13,7 @@ with open("name_to_id.pkl", "rb") as f:
 
 st.set_page_config(page_title="Tube Distance Calculator")
 st.title("London Underground Distance Tool")
-st.markdown("A tool that calculates station-to-station distance in london underground")
+st.markdown("A tool for calculating station-to-station distances across the London Underground network using geographic data")
 st.divider()
  
 col1,col2 = st.columns(2)
