@@ -41,7 +41,7 @@ if st.button("Calculate Distance"):
             st.write(f"There are {num_stops} stops from ({path_names[0]}) to ({path_names[-1]})") 
             st.write(" → ".join(path_names))
             st.divider()
-            st.subheader("Break down of the path and their line")
+            st.subheader("Route Breakdown by Underground Line")
             
             for i in range(len(path_ids)-1): 
                 edge_data = G.get_edge_data(path_ids[i],path_ids[i+1])
