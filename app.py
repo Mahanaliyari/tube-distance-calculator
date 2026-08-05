@@ -13,7 +13,7 @@ with open("name_to_id.pkl", "rb") as f:
 
 st.set_page_config(page_title="Tube Distance Calculator")
 st.title("London Underground Distance Tool")
-st.markdown("A tool that calculates station-to-station distance in london underground")
+st.markdown("A tool for calculating station-to-station distances across the London Underground network using geographic data")
 st.divider()
  
 col1,col2 = st.columns(2)
@@ -41,7 +41,7 @@ if st.button("Calculate Distance"):
             st.write(f"There are {num_stops} stops from ({path_names[0]}) to ({path_names[-1]})") 
             st.write(" → ".join(path_names))
             st.divider()
-            st.subheader("Break down of the path and their line")
+            st.subheader("Route Breakdown by Underground Line")
             
             for i in range(len(path_ids)-1): 
                 edge_data = G.get_edge_data(path_ids[i],path_ids[i+1])
