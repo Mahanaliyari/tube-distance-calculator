@@ -2,7 +2,7 @@
 
 A web app that calculates the shortest travel distance between any two London Underground stations, showing the full route, number of stops, and which line to take for each leg.
 
->[Live demo]: (https://tube-distance-calculator.streamlit.app/)
+>[Live demo](https://tube-distance-calculator.streamlit.app/)
 
 
 ## Features
@@ -81,4 +81,3 @@ Select a "From" and "To" station and click **Calculate Distance** to see the rou
 
 - Distances are based on the published inter-station distance data, not real-time travel times.
 - Some historically renamed or decommissioned stations/lines (e.g. East London Line, Docklands Light Railway) are excluded.
-- Station name matching required manual cleanup for a number of edge cases (platform-specific names, apostrophes, abbreviations); see `Data_Merge.ipynb` for the full list of corrections.
